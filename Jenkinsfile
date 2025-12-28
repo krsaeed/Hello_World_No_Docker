@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/krsaeed/Hello_World_py.git'
+                git 'https://github.com/krsaeed/Hello_World_No_Docker.git'
             }
         }
 
