@@ -14,6 +14,7 @@ pipeline {
         stage('Run App') {
             steps {
                 sh '''
+                pkill -f app.py || true
                 nohup python3 app.py > app.log 2>&1 &
                 '''
             }
